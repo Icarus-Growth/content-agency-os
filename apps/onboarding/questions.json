@@ -1,0 +1,303 @@
+{
+  "form_key": "onboarding",
+  "form_version": "content-v1",
+  "title": "Client onboarding",
+  "intro": {
+    "minutes": 15,
+    "bring": [
+      "Links to your social media accounts",
+      "Links to creators you like",
+      "Your logo and brand colours",
+      "Some raw footage, if you have it"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "title": "Your details",
+      "blurb": "Who you are and how we reach you."
+    },
+    {
+      "step": 2,
+      "title": "Your brand",
+      "blurb": "Who you are on camera, and who you talk to."
+    },
+    {
+      "step": 3,
+      "title": "Content you like",
+      "blurb": "The look and feel we aim for, and what to stay away from."
+    },
+    {
+      "step": 4,
+      "title": "Filming and posting",
+      "blurb": "How footage gets to us, and how videos go out."
+    },
+    {
+      "step": 5,
+      "title": "Access",
+      "blurb": "The folders and accounts we need. If something is not done yet, choose Not yet. We will do it with you on the call."
+    },
+    {
+      "step": 6,
+      "title": "Goals",
+      "blurb": "What good looks like for you."
+    },
+    {
+      "step": 7,
+      "title": "Review",
+      "blurb": "Check your answers. Nothing is sent until you press Submit."
+    }
+  ],
+  "flow": [
+    {
+      "step": 1,
+      "id": "full_name",
+      "label": "Your name",
+      "type": "short_text",
+      "required": true,
+      "placeholder": "e.g. Sam Taylor",
+      "prefill": "name"
+    },
+    {
+      "step": 1,
+      "id": "email",
+      "label": "Your email",
+      "type": "email",
+      "required": true,
+      "placeholder": "e.g. sam@example.com",
+      "prefill": "email",
+      "help": "We send updates about your account to this address."
+    },
+    {
+      "step": 1,
+      "id": "phone",
+      "label": "Best phone number for business",
+      "type": "short_text",
+      "required": false,
+      "placeholder": "e.g. +1 555 010 0100",
+      "prefill": "phone"
+    },
+    {
+      "step": 1,
+      "id": "company_name",
+      "label": "Company name",
+      "type": "short_text",
+      "required": true,
+      "placeholder": "e.g. Example Co",
+      "prefill": "company"
+    },
+    {
+      "step": 1,
+      "id": "website",
+      "label": "Company website",
+      "type": "url",
+      "required": true,
+      "placeholder": "e.g. example.com",
+      "none_option": {
+        "label": "We do not have a website yet",
+        "value": "No website yet"
+      }
+    },
+    {
+      "step": 1,
+      "id": "team_contacts",
+      "label": "Who else on your team should we talk to?",
+      "type": "long_text",
+      "required": false,
+      "rows": 3,
+      "help": "Name, job title and email for each person. Put each person on a new line.",
+      "placeholder": "e.g. Alex Kim, Head of Sales, alex@example.com"
+    },
+    {
+      "step": 2,
+      "id": "known_for",
+      "label": "What do you want to be known for?",
+      "type": "long_text",
+      "required": true
+    },
+    {
+      "step": 2,
+      "id": "origin_story",
+      "label": "What is your story?",
+      "type": "long_text",
+      "required": true,
+      "rows": 6,
+      "help": "Your career, the hard times and the turning points. Good videos come from real stories."
+    },
+    {
+      "step": 2,
+      "id": "achievements",
+      "label": "Three things you are most proud of",
+      "type": "long_text",
+      "required": false
+    },
+    {
+      "step": 2,
+      "id": "audience",
+      "label": "Who is your content for?",
+      "type": "long_text",
+      "required": true,
+      "help": "The people you want to watch, follow and buy from you."
+    },
+    {
+      "step": 3,
+      "id": "platforms",
+      "label": "Which platforms should we post on?",
+      "type": "multi_select",
+      "required": true,
+      "options": [
+        "Instagram",
+        "TikTok",
+        "YouTube Shorts",
+        "YouTube",
+        "LinkedIn",
+        "Facebook",
+        "X"
+      ]
+    },
+    {
+      "step": 3,
+      "id": "account_links",
+      "label": "Links to your accounts on those platforms",
+      "type": "long_text",
+      "required": true
+    },
+    {
+      "step": 3,
+      "id": "references",
+      "label": "Creators you look up to",
+      "type": "long_text",
+      "required": true,
+      "help": "Links to people whose content has the feel you want."
+    },
+    {
+      "step": 3,
+      "id": "niche_pages",
+      "label": "Pages in your field that you like",
+      "type": "long_text",
+      "required": false
+    },
+    {
+      "step": 3,
+      "id": "avoid",
+      "label": "Brands, people or styles you do not want to be like",
+      "type": "long_text",
+      "required": false
+    },
+    {
+      "step": 4,
+      "id": "who_films",
+      "label": "Who films the raw footage?",
+      "type": "single_select",
+      "required": true,
+      "options": [
+        "I film it myself",
+        "My team films it",
+        "We need you to film it"
+      ]
+    },
+    {
+      "step": 4,
+      "id": "videos_per_week",
+      "label": "How many videos can you film each week?",
+      "type": "short_text",
+      "required": false
+    },
+    {
+      "step": 4,
+      "id": "posting",
+      "label": "Who posts the finished videos?",
+      "type": "single_select",
+      "required": true,
+      "options": [
+        "Post them for us",
+        "Send the finished videos back to us"
+      ]
+    },
+    {
+      "step": 4,
+      "id": "reviewer",
+      "label": "Who checks the videos before they go out?",
+      "type": "short_text",
+      "required": true,
+      "help": "Name and email. We send each week's videos to this person in one batch."
+    },
+    {
+      "step": 5,
+      "id": "access_folder",
+      "label": "Upload your first raw footage to the shared folder we sent you",
+      "type": "checkbox",
+      "required": false
+    },
+    {
+      "step": 5,
+      "id": "access_social",
+      "label": "Give us access to the accounts we post on",
+      "type": "checkbox",
+      "required": false,
+      "show_if": {
+        "question": "posting",
+        "equals": "Post them for us"
+      },
+      "help": "Add us as a team member or manager on each platform. Use the email address in our welcome message."
+    },
+    {
+      "step": 5,
+      "id": "brand_files",
+      "label": "Upload your logo, fonts and brand colours to the shared folder",
+      "type": "checkbox",
+      "required": false
+    },
+    {
+      "step": 5,
+      "id": "access_notes",
+      "label": "Is there any access you cannot give us yet?",
+      "type": "long_text",
+      "required": false,
+      "help": "Tell us what it is and why. For example, the login belongs to someone who is away. We will sort it out with you on the onboarding call."
+    },
+    {
+      "step": 6,
+      "id": "goal_90_days",
+      "label": "What would success on social media look like in 90 days?",
+      "type": "long_text",
+      "required": true,
+      "help": "For example, a number of followers, views, or enquiries from your content."
+    },
+    {
+      "step": 6,
+      "id": "worries",
+      "label": "Is there anything you are worried about?",
+      "type": "long_text",
+      "required": false,
+      "help": "For example, something that went wrong with an agency before. We would rather know now."
+    },
+    {
+      "step": 6,
+      "id": "anything_else",
+      "label": "Anything else we should know before the onboarding call?",
+      "type": "long_text",
+      "required": false
+    }
+  ],
+  "done": {
+    "heading": "That's everything. Thank you.",
+    "blurb": "Your answers are in. We read them before your onboarding call, so the call starts with your business and not with questions you have already answered.",
+    "next": {
+      "heading": "What happens next",
+      "items": [
+        "We read your answers and prepare for the onboarding call.",
+        "On the call we agree your content plan and go through any access that is not done yet.",
+        "Then you upload raw footage to the shared folder, and we start editing."
+      ]
+    },
+    "links": [
+      {
+        "heading": "Book your onboarding call",
+        "body": "Choose a time that suits you.",
+        "cta": "Book the call",
+        "url": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "_about": "The AI connector's actions for this agency type (apps/os/automations/mcp_server.py). 'actions' is the full list the connector offers; each board says which column is its name, its stages in order, who works on it, the one 'work link' column and the columns cards.update may change. Stage names must be spelled exactly as in the database; the tests check them. 'documents' on a board and 'client_documents' name the long texts that docs.read and docs.write open: the field key (the same in the app and the database), its label, and the old link column kept for 'paste a link instead'.",
+  "actions": [
+    "my_queue",
+    "urgent",
+    "boards",
+    "cards.search",
+    "cards.get",
+    "docs.read",
+    "clients.get",
+    "team",
+    "calls.get",
+    "forms.get",
+    "metrics.get",
+    "brain.index",
+    "brain.map",
+    "brain.search",
+    "brain.read",
+    "cards.create",
+    "cards.move",
+    "cards.update",
+    "cards.note",
+    "docs.write",
+    "calls.add",
+    "metrics.add",
+    "clients.update"
+  ],
+  "boards": {
+    "tasks": {
+      "name": "task_name",
+      "stages": [
+        "-1 - Rejected",
+        "0 - Backlog",
+        "9 - Blocked",
+        "10 - In Progress",
+        "29 - Amendments",
+        "30 - In Review",
+        "100 - Complete"
+      ],
+      "people": [
+        "assignee_id",
+        "reviewer_id"
+      ],
+      "work_link": "links",
+      "fields": [
+        "due_date",
+        "notes",
+        "links"
+      ],
+      "created_by": "created_by_id"
+    },
+    "videos": {
+      "name": "video_title",
+      "stages": [
+        "0 - Raw Footage",
+        "10 - Ready To Edit",
+        "20 - Editing",
+        "30 - Internal Review",
+        "39 - Amendments",
+        "40 - Client Review",
+        "49 - Client Changes",
+        "50 - Ready To Post",
+        "60 - Scheduled",
+        "100 - Posted"
+      ],
+      "people": [
+        "assignee_id",
+        "reviewer_id"
+      ],
+      "work_link": "edited_url",
+      "fields": [
+        "due_date",
+        "notes",
+        "raw_footage_url",
+        "edited_url",
+        "feedback_notes",
+        "post_url"
+      ],
+      "documents": {
+        "caption": {
+          "label": "Caption"
+        }
+      }
+    }
+  },
+  "client_stages": [
+    "0 - Paid",
+    "10 - Contract Sent",
+    "20 - Contract Signed",
+    "30 - Set-Up",
+    "40 - Call Booked",
+    "50 - Call Taken",
+    "100 - Onboarded"
+  ],
+  "client_fields": [
+    "client_name",
+    "status",
+    "website",
+    "contact_name",
+    "contact_email",
+    "contact_phone",
+    "start_date",
+    "end_date",
+    "services",
+    "onboarding_stage",
+    "account_manager_id",
+    "drive_folder_url",
+    "notes",
+    "editor_id",
+    "social_media_manager_id",
+    "platforms",
+    "posts_per_week",
+    "raw_footage_folder_url",
+    "brand_guidelines_url",
+    "strategy_brief_url"
+  ],
+  "client_documents": {
+    "strategy_brief": {
+      "label": "Strategy brief",
+      "link": "strategy_brief_url"
+    }
+  },
+  "call_types": [
+    "Sales",
+    "Onboarding",
+    "Check-In",
+    "Internal",
+    "Other"
+  ],
+  "metrics": {
+    "daily": [
+      "posts_published",
+      "views",
+      "followers",
+      "engagements",
+      "top_post_url",
+      "source"
+    ],
+    "weekly": [
+      "posts_published",
+      "views",
+      "followers",
+      "engagements",
+      "top_post_url",
+      "note"
+    ]
+  }
+}
