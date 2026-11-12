@@ -1,0 +1,13 @@
+{
+  "_about": "Settings for the shorts clipper. What makes a good clip is in references/clip_rules.md.",
+  "clip_count": 5,
+  "min_seconds": 20,
+  "max_seconds": 60,
+  "max_transcript_chars": 120000,
+  "max_tokens": 4000,
+  "effort": "medium",
+  "vertical_filter": "crop=trunc(ih*9/16/2)*2:ih,scale=1080:1920",
+  "ffmpeg_quality": ["-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart"],
+  "transcribe_command": ["whisper", "{video}", "--model", "base", "--output_format", "json", "--output_dir", "{out}"],
+  "channel": "task-updates"
+}

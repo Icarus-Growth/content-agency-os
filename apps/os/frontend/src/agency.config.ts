@@ -33,7 +33,8 @@ export const AGENCY: AgencyConfig = {
       nameKey: 'video_title',
       stageKey: 'stage',
       ladder: 'video_stage',
-      closed: ['60 - Scheduled', '100 - Posted'],
+      closed: ['100 - Posted'],
+      live: ['60 - Scheduled'],
       clientRequired: true,
       card: ['client_id', 'assignee_id', 'due_date'],
       sections: [

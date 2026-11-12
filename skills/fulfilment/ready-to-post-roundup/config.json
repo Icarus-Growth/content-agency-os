@@ -1,0 +1,9 @@
+{
+  "_about": "Rules for the ready to post roundup. Change a value here; no code change is needed.",
+  "channel": "approved",
+  "ready_stage": "50 - Ready To Post",
+  "scheduled_stage": "60 - Scheduled",
+  "include_scheduled_without_time": true,
+  "post_when_empty": false,
+  "max_lines_per_client": 30
+}
