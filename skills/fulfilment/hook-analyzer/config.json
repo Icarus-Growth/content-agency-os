@@ -1,0 +1,7 @@
+{
+  "_about": "Settings for the hook check. The scoring rules are in references/hook_rules.md.",
+  "opening_words": 40,
+  "save_to": "notes",
+  "max_tokens": 1500,
+  "effort": "low"
+}
